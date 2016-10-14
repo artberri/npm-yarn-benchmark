@@ -27,7 +27,7 @@ done
 
 shift `expr $OPTIND - 1`
 
-output_folder=$(realpath $output_folder)
+output_folder="${base_dir}/${output_folder}"
 
 mkdir -p $output_folder
 
