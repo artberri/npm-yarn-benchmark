@@ -1,2 +1,3 @@
-reports/
+reports*/
 node_modules/
+*.lock
