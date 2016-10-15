@@ -2,5 +2,8 @@ language: node_js
 node_js:
   - "6"
   - "4"
+before_install:
+  - "sudo apt-get install -yqq time"
+  - "npm install -g yarn"
 install: true
 script: ./benchmark.sh
