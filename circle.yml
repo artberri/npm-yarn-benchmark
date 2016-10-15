@@ -1,0 +1,11 @@
+machine:
+  node:
+    version: 6.8.0
+
+dependencies:
+  pre:
+    - npm install -g yarn
+
+test:
+  override:
+    - ./benchmark.sh

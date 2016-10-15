@@ -1,5 +1,9 @@
 # npm-yarn-benchmark
 
+[![Build Status](https://travis-ci.org/artberri/npm-yarn-benchmark.svg?branch=master)](https://travis-ci.org/artberri/npm-yarn-benchmark)
+[![Build Status](https://snap-ci.com/artberri/npm-yarn-benchmark/branch/master/build_image)](https://snap-ci.com/artberri/npm-yarn-benchmark/branch/master)
+[![Build Status](https://semaphoreci.com/api/v1/artberri/npm-yarn-benchmark/branches/master/badge.svg)](https://semaphoreci.com/artberri/npm-yarn-benchmark)
+
 Bash script for comparing NPM and Yarn performance.
 
 Any improvement is welcome!
