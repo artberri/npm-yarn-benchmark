@@ -141,7 +141,6 @@ show_results() {
         echo -n $tool'_with_all_cached ' >> $all_file
         cat $avg_file >> $all_file
         echo >> $all_file
-
     done
 
     echo ''
