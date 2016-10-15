@@ -2,7 +2,7 @@
 # Benchmark runner
 # Based on https://gist.github.com/peterjmit/3864743
 
-repeats=2
+repeats=5
 output_folder='reports'
 libraries=('angular2' 'ember' 'react')
 tools=('npm' 'yarn')
