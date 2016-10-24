@@ -23,5 +23,5 @@ By default it will run twice each installation, use `-n` to change the number of
 ./benchmark.sh -n 10
 ```
 
-The test is run by installing angular2, ember and reach N times. Each series is run twice, the
+The test is run by installing angular2, ember and react N times. Each series is run twice, the
 first time cleaning the cache in every run and the second one using the cache.
