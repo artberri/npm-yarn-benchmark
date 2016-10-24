@@ -1,0 +1,11 @@
+box: node:6
+build:
+  steps:
+    - install-packages:
+      packages: time
+    - script:
+      name: install yarn
+      code: npm install -g yarn
+    - script:
+      name: benchmark
+      code: ./benchmark.sh

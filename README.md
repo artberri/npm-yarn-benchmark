@@ -4,6 +4,7 @@
 [![Build Status](https://snap-ci.com/artberri/npm-yarn-benchmark/branch/master/build_image)](https://snap-ci.com/artberri/npm-yarn-benchmark/branch/master)
 [![Build Status](https://semaphoreci.com/api/v1/artberri/npm-yarn-benchmark/branches/master/badge.svg)](https://semaphoreci.com/artberri/npm-yarn-benchmark)
 [![CircleCI](https://circleci.com/gh/artberri/npm-yarn-benchmark.svg?style=shield)](https://circleci.com/gh/artberri/npm-yarn-benchmark)
+[![wercker status](https://app.wercker.com/status/f010b6017b2d43bdad5baa95cf90f840/s/master "wercker status")](https://app.wercker.com/project/byKey/f010b6017b2d43bdad5baa95cf90f840)
 
 Bash script for comparing NPM and Yarn performance.
 
