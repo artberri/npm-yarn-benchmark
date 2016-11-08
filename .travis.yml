@@ -5,5 +5,7 @@ node_js:
 before_install:
   - "sudo apt-get install -yqq time"
   - "npm install -g yarn"
+  - "npm install -g ied"
+  - "npm install -g pnpm"
 install: true
 script: ./benchmark.sh

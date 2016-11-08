@@ -5,7 +5,7 @@
 repeats=3
 output_folder='reports'
 libraries=('angular2' 'ember' 'react')
-tools=('npm' 'yarn')
+tools=('yarn' 'ied' 'pnpm' 'npm')
 base_dir=$PWD
 
 # Option parsing
@@ -31,8 +31,8 @@ output_folder="${base_dir}/${output_folder}"
 
 mkdir -p $output_folder
 
-echo 'Benchmarking: Yarn vs NPM'
-echo '========================'
+echo 'Benchmarking: Yarn vs. IED vs. PNPM vs. NPM'
+echo '==========================================='
 echo 'Running' $repeats 'times per library, test results will be stored in' $output_folder 'directory'
 echo ''
 
@@ -71,6 +71,14 @@ run_benchmark() {
             command_to_run='yarn install'
             command_to_clear_cache='yarn cache clean'
             ;;
+        ied)
+            command_to_run='ied install'
+            command_to_clear_cache='ied cache clean'
+            ;;
+        pnpm)
+            command_to_run='pnpm install'
+            command_to_clear_cache='pnpm cache clean'
+            ;;
         npm)
             command_to_run='npm install --cache-min 999999'
             command_to_clear_cache='npm cache clean'
@@ -89,7 +97,7 @@ run_benchmark() {
 
         # Install once to generate cache
         rm -rf node_modules
-        rm -f yarn.lock
+        rm -f *.lock
         $command_to_run > /dev/null 2>&1
     fi
 
@@ -99,7 +107,7 @@ run_benchmark() {
     for (( i = 1; i <= $repeats ; i++ ))
     do
         rm -rf node_modules
-        rm -f yarn.lock
+        rm -f *.lock
 
         # Clean cache
         if [ $clean_cache = 1 ]; then
