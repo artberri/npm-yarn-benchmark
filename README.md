@@ -1,10 +1,8 @@
-# npm-yarn-benchmark
+# [DEPRECATED] npm-yarn-benchmark
 
-[![Build Status](https://travis-ci.org/artberri/npm-yarn-benchmark.svg?branch=master)](https://travis-ci.org/artberri/npm-yarn-benchmark)
-[![Build Status](https://snap-ci.com/artberri/npm-yarn-benchmark/branch/master/build_image)](https://snap-ci.com/artberri/npm-yarn-benchmark/branch/master)
-[![Build Status](https://semaphoreci.com/api/v1/artberri/npm-yarn-benchmark/branches/master/badge.svg)](https://semaphoreci.com/artberri/npm-yarn-benchmark)
-[![CircleCI](https://circleci.com/gh/artberri/npm-yarn-benchmark.svg?style=shield)](https://circleci.com/gh/artberri/npm-yarn-benchmark)
-
+> 📌 **Deprecation Notice**
+>
+> This repository is deprecated and no more work will be done on this by [Alberto Varela](https://github.com/artberri).
 Bash script for comparing NPM and Yarn performance.
 
 Any improvement is welcome!
